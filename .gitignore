@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+
+# Source artwork files stay local; the site uses optimized files in assets/portfolio/.
+/*.ai
+/*.pdf
+/*.png
+/*.PNG
+/*.jpg
+/*.JPG
+/*.jpeg
+/*.webp
