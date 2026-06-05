@@ -9,11 +9,11 @@ const translations = {
     "nav.work": "Obra",
     "nav.contact": "Contacto",
     "controls.theme": "Dark",
-    "hero.role": "Artista visual e ilustradora",
+    "hero.role": "Artísta visual e ilustradora",
     "hero.subtitle": "Color, ilustración, personajes y conceptos visuales.",
     "about.title": "Sobre mí",
     "about.body":
-      "Xiomara Vasquez es una artista visual e ilustradora enfocada en color, diseño de personajes y desarrollo de conceptos visuales. Su trabajo combina imaginación, sensibilidad artística y versatilidad, creando piezas para proyectos narrativos, branding, mercancía y experiencias digitales.",
+      "Xiomara Vázquez es una artísta visual e ilustradora enfocada en color, diseño de personajes y desarrollo de conceptos visuales. Su trabajo combina imaginación, sensibilidad artística y versatilidad, creando piezas para proyectos narrativos, branding, mercancía y experiencias digitales.",
     "work.title": "Obra",
     "work.subtitle":
       "Una selección curada de ilustración, personajes, branding y exploración visual.",
@@ -50,7 +50,7 @@ const translations = {
     "hero.subtitle": "Color, illustration, characters, and visual concepts.",
     "about.title": "About",
     "about.body":
-      "Xiomara Vasquez is a visual artist and illustrator focused on color, character design, and visual concept development. Her work combines imagination, artistic sensitivity, and versatility, creating pieces for narrative projects, branding, merchandise, and digital experiences.",
+      "Xiomara Vázquez is a visual artist and illustrator focused on color, character design, and visual concept development. Her work combines imagination, artistic sensitivity, and versatility, creating pieces for narrative projects, branding, merchandise, and digital experiences.",
     "work.title": "Work",
     "work.subtitle":
       "A curated selection of illustration, characters, branding, and visual exploration.",
