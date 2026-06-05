@@ -85,7 +85,7 @@ const skills = {
   en: ["Illustration", "Color", "Character Design", "Digital Art", "Sketching", "Branding", "Concept Art"],
 };
 
-// Edit portfolio images, clean titles, and categories here.
+// Edit portfolio images, clean titles, categories, techniques, and palettes here.
 const artworks = [
   {
     title: "Sea Guardian",
@@ -136,6 +136,54 @@ const artworks = [
     ratio: "1.43",
   },
   {
+    title: "Symbiote Character",
+    image: "assets/portfolio/symbiote-character.jpg",
+    category: "characters",
+    label: { es: "Personajes", en: "Characters" },
+    technique: {
+      es: "Ilustración digital de personaje con textura oscura, contraste alto y acabado expresivo.",
+      en: "Digital character illustration with dark texture, high contrast, and expressive finish.",
+    },
+    palette: ["#0c1115", "#e9e2db", "#df5c5d", "#2c6875"],
+    ratio: "0.77",
+  },
+  {
+    title: "Framed Portrait",
+    image: "assets/portfolio/framed-portrait.jpg",
+    category: "illustration",
+    label: { es: "Ilustración", en: "Illustration" },
+    technique: {
+      es: "Retrato en alto contraste con tratamiento gráfico monocromático y presentación física.",
+      en: "High-contrast portrait with monochrome graphic treatment and physical presentation.",
+    },
+    palette: ["#f2f0ec", "#181818", "#6b6a66", "#b9b3aa"],
+    ratio: "0.87",
+  },
+  {
+    title: "Tea Boom Brand",
+    image: "assets/portfolio/tea-boom-brand.jpg",
+    category: "branding",
+    label: { es: "Branding", en: "Branding" },
+    technique: {
+      es: "Sistema visual de marca con empaque, patrones, color comercial y composición promocional.",
+      en: "Brand visual system with packaging, patterns, commercial color, and promotional composition.",
+    },
+    palette: ["#f28424", "#ec3f74", "#f0c83f", "#293c2f"],
+    ratio: "1.88",
+  },
+  {
+    title: "Jewelry Render",
+    image: "assets/portfolio/jewelry-render.jpg",
+    category: "digital",
+    label: { es: "Arte digital", en: "Digital Art" },
+    technique: {
+      es: "Render digital con volumen, brillo, textura metálica y estudio de superficie.",
+      en: "Digital render with volume, shine, metallic texture, and surface study.",
+    },
+    palette: ["#f3f1ee", "#9d77b4", "#c8c1d1", "#5f6171"],
+    ratio: "0.69",
+  },
+  {
     title: "Creative Concept",
     image: "assets/portfolio/coin-study.jpg",
     category: "concepts",
@@ -146,6 +194,174 @@ const artworks = [
     },
     palette: ["#d6a235", "#7f4312", "#1f8a36", "#f3f0e9"],
     ratio: "1",
+  },
+  {
+    title: "Bottle Sketch",
+    image: "assets/portfolio/bottle-sketch.jpg",
+    category: "sketches",
+    label: { es: "Bocetos", en: "Sketches" },
+    technique: {
+      es: "Boceto tradicional de objeto con línea, proporción y observación de volumen.",
+      en: "Traditional object sketch with linework, proportion, and volume observation.",
+    },
+    palette: ["#f3f1ed", "#1c1c1c", "#a8a29a", "#d8d3cb"],
+    ratio: "0.74",
+  },
+  {
+    title: "Doberman Sketch",
+    image: "assets/portfolio/doberman-sketch.jpg",
+    category: "sketches",
+    label: { es: "Bocetos", en: "Sketches" },
+    technique: {
+      es: "Dibujo tradicional anatómico con textura de grafito y estudio de carácter.",
+      en: "Traditional anatomical drawing with graphite texture and character study.",
+    },
+    palette: ["#f4f2ef", "#202020", "#7c7771", "#c7c0b8"],
+    ratio: "0.8",
+  },
+  {
+    title: "Soda Pop Study",
+    image: "assets/portfolio/soda-pop-study.jpg",
+    category: "illustration",
+    label: { es: "Ilustración", en: "Illustration" },
+    technique: {
+      es: "Ilustración tradicional de objetos con color, sombra ligera y textura de papel.",
+      en: "Traditional object illustration with color, light shadow, and paper texture.",
+    },
+    palette: ["#bf2c28", "#f2d246", "#264d8f", "#f1eee7"],
+    ratio: "0.88",
+  },
+  {
+    title: "Cyber Character",
+    image: "assets/portfolio/cyber-character.jpg",
+    category: "characters",
+    label: { es: "Personajes", en: "Characters" },
+    technique: {
+      es: "Diseño de personaje con color tradicional, accesorios futuristas y línea expresiva.",
+      en: "Character design with traditional color, futuristic accessories, and expressive linework.",
+    },
+    palette: ["#d24f31", "#f1c128", "#6e8794", "#2b2a2b"],
+    ratio: "0.82",
+  },
+  {
+    title: "Crown Character",
+    image: "assets/portfolio/crown-character.jpg",
+    category: "characters",
+    label: { es: "Personajes", en: "Characters" },
+    technique: {
+      es: "Boceto de personaje en tinta con contraste fuerte, gesto y detalle ornamental.",
+      en: "Ink character sketch with strong contrast, gesture, and ornamental detail.",
+    },
+    palette: ["#f2f0ec", "#151515", "#7f7a74", "#c8c2ba"],
+    ratio: "0.8",
+  },
+  {
+    title: "Lime Splash",
+    image: "assets/portfolio/lime-splash-sketch.jpg",
+    category: "illustration",
+    label: { es: "Ilustración", en: "Illustration" },
+    technique: {
+      es: "Estudio tradicional de líquido y fruta con acento de color y movimiento.",
+      en: "Traditional liquid and fruit study with color accent and movement.",
+    },
+    palette: ["#e7efe5", "#96b82c", "#151515", "#d3d0c9"],
+    ratio: "0.76",
+  },
+  {
+    title: "Flamingo Illustration",
+    image: "assets/portfolio/sketch-study-02.jpg",
+    category: "illustration",
+    label: { es: "Ilustración", en: "Illustration" },
+    technique: {
+      es: "Ilustración tradicional con tinta, lápiz de color y composición decorativa.",
+      en: "Traditional illustration with ink, colored pencil, and decorative composition.",
+    },
+    palette: ["#e98f9a", "#6c5d8c", "#79a65a", "#f2efe6"],
+    ratio: "0.72",
+  },
+  {
+    title: "Fantasy Figure Sketch",
+    image: "assets/portfolio/fantasy-figure-sketch.jpg",
+    category: "sketches",
+    label: { es: "Bocetos", en: "Sketches" },
+    technique: {
+      es: "Boceto conceptual de figura fantástica con construcción de silueta y detalle.",
+      en: "Fantasy figure concept sketch with silhouette construction and detail.",
+    },
+    palette: ["#f4f1ec", "#282522", "#9a948d", "#d3ccc3"],
+    ratio: "0.78",
+  },
+  {
+    title: "Storefront Concept",
+    image: "assets/portfolio/storefront-concept.jpg",
+    category: "concepts",
+    label: { es: "Conceptos", en: "Concepts" },
+    technique: {
+      es: "Concept art arquitectónico con línea, color tradicional y diseño de fachada.",
+      en: "Architectural concept art with linework, traditional color, and facade design.",
+    },
+    palette: ["#77b8c3", "#e85d4d", "#f4d15b", "#517a53"],
+    ratio: "0.74",
+  },
+  {
+    title: "Dessert Study",
+    image: "assets/portfolio/sketch-study-03.jpg",
+    category: "illustration",
+    label: { es: "Ilustración", en: "Illustration" },
+    technique: {
+      es: "Ilustración tradicional de alimento con textura, brillo y color cálido.",
+      en: "Traditional food illustration with texture, shine, and warm color.",
+    },
+    palette: ["#6a2e1d", "#c84d3f", "#f2e8d6", "#2f241f"],
+    ratio: "0.81",
+  },
+  {
+    title: "Dark Fantasy Concept",
+    image: "assets/portfolio/dark-fantasy-concept.jpg",
+    category: "concepts",
+    label: { es: "Conceptos", en: "Concepts" },
+    technique: {
+      es: "Arte conceptual oscuro con personaje, criaturas y composición narrativa.",
+      en: "Dark concept art with character, creatures, and narrative composition.",
+    },
+    palette: ["#1b2728", "#d8c2a9", "#527a76", "#111112"],
+    ratio: "0.7",
+  },
+  {
+    title: "Royal Bunny",
+    image: "assets/portfolio/royal-bunny-character.jpg",
+    category: "characters",
+    label: { es: "Personajes", en: "Characters" },
+    technique: {
+      es: "Diseño digital de personaje con mascota, corona, vestuario y estilo cartoon.",
+      en: "Digital character design with mascot, crown, costume, and cartoon styling.",
+    },
+    palette: ["#c78b2f", "#f1d6aa", "#5a5c62", "#d4a04a"],
+    ratio: "1",
+  },
+  {
+    title: "Sphere Study",
+    image: "assets/portfolio/sphere-study.jpg",
+    category: "digital",
+    label: { es: "Arte digital", en: "Digital Art" },
+    technique: {
+      es: "Estudio digital de esfera, reflexión, luz y superficie pulida.",
+      en: "Digital sphere study focused on reflection, light, and polished surface.",
+    },
+    palette: ["#b78d64", "#eee9df", "#766145", "#1f1712"],
+    ratio: "1.42",
+  },
+  {
+    title: "Cosmetic Concept",
+    image: "assets/portfolio/cosmetic-concept.jpg",
+    category: "concepts",
+    label: { es: "Conceptos", en: "Concepts" },
+    technique: {
+      es: "Concepto digital de producto con formas cosméticas, color translúcido y acabado ligero.",
+      en: "Digital product concept with cosmetic forms, translucent color, and light finish.",
+    },
+    palette: ["#89d9e5", "#d88ad5", "#392f44", "#f1eef1"],
+    ratio: "1.44",
   },
   {
     title: "Brand Concept",
@@ -184,6 +400,18 @@ const artworks = [
     ratio: "1",
   },
   {
+    title: "Kiska Campaign",
+    image: "assets/portfolio/kiska-campaign.jpg",
+    category: "branding",
+    label: { es: "Branding", en: "Branding" },
+    technique: {
+      es: "Composición publicitaria digital con producto, fuego, tipografía y atmósfera intensa.",
+      en: "Digital advertising composition with product, fire, typography, and intense atmosphere.",
+    },
+    palette: ["#e15622", "#8a1018", "#f4a431", "#211317"],
+    ratio: "0.56",
+  },
+  {
     title: "Traditional Sketch",
     image: "assets/portfolio/octopus-sketch.jpg",
     category: "sketches",
@@ -196,40 +424,16 @@ const artworks = [
     ratio: "0.78",
   },
   {
-    title: "Sketch Study",
-    image: "assets/portfolio/sketch-study-02.jpg",
-    category: "sketches",
-    label: { es: "Bocetos", en: "Sketches" },
-    technique: {
-      es: "Dibujo tradicional monocromático con textura de papel y exploración de línea.",
-      en: "Traditional monochrome drawing with paper texture and line exploration.",
-    },
-    palette: ["#f4f1ec", "#22201e", "#9b958d", "#d6d1c8"],
-    ratio: "0.72",
-  },
-  {
-    title: "Character Concept",
+    title: "Bad Bunny Character",
     image: "assets/portfolio/digital-portrait.jpg",
     category: "characters",
     label: { es: "Personajes", en: "Characters" },
     technique: {
-      es: "Ilustración digital de personaje con color expresivo y acabado gráfico.",
-      en: "Digital character illustration with expressive color and graphic finish.",
+      es: "Ilustración digital de personaje con estilo cartoon, contraste y gráfica musical.",
+      en: "Digital character illustration with cartoon styling, contrast, and music-inspired graphics.",
     },
-    palette: ["#d16d4b", "#2d6f82", "#f2cf77", "#253142"],
+    palette: ["#1b1b1d", "#e84f8e", "#69c5c7", "#f4ede6"],
     ratio: "1",
-  },
-  {
-    title: "Line Exploration",
-    image: "assets/portfolio/sketch-study-03.jpg",
-    category: "sketches",
-    label: { es: "Bocetos", en: "Sketches" },
-    technique: {
-      es: "Estudio tradicional de línea, contraste y composición en blanco y negro.",
-      en: "Traditional study of line, contrast, and black-and-white composition.",
-    },
-    palette: ["#f1eee8", "#181818", "#746f68", "#c9c1b7"],
-    ratio: "0.8",
   },
 ];
 
@@ -442,7 +646,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 }
+  { threshold: 0.01 }
 );
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));

@@ -786,10 +786,15 @@ h2 {
 
   .filters {
     justify-content: flex-start;
+    margin-bottom: 1.25rem;
   }
 
   .gallery {
     columns: 1;
+  }
+
+  .work-section {
+    padding-top: 3rem;
   }
 
   .contact-grid {
