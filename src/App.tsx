@@ -15,7 +15,7 @@ const categories: Array<ProjectCategory | "all"> = [
   "concepts",
 ];
 
-const heroProjectTitles = ["Visual Exploration", "Royal Bunny", "Tea Boom Brand", "Color Study"];
+const heroProjectTitles = ["Visual Exploration", "Royal Bunny", "Dark Fantasy Concept", "Color Study"];
 
 const emptyForm: ProjectFormValues = {
   title: "",
