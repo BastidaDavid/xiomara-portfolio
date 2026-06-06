@@ -1,5 +1,8 @@
 .DS_Store
 node_modules/
+dist/
+.env
+.env.local
 /imgs/
 
 # Source artwork files stay local; the site uses optimized files in assets/portfolio/.
