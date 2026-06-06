@@ -15,6 +15,8 @@ const categories: Array<ProjectCategory | "all"> = [
   "concepts",
 ];
 
+const heroProjectTitles = ["Visual Exploration", "Royal Bunny", "Tea Boom Brand", "Color Study"];
+
 const emptyForm: ProjectFormValues = {
   title: "",
   description: "",
@@ -139,8 +141,20 @@ export default function App() {
   }, []);
 
   const featuredProjects = useMemo(() => {
-    const featured = projects.filter((project) => project.featured).slice(0, 4);
-    return featured.length >= 4 ? featured : projects.slice(0, 4);
+    const selectedIds = new Set<string>();
+    const selected = heroProjectTitles.reduce<Project[]>((heroProjects, title) => {
+      const project = projects.find((candidate) => candidate.title === title);
+      if (project && !selectedIds.has(project.id)) {
+        selectedIds.add(project.id);
+        heroProjects.push(project);
+      }
+      return heroProjects;
+    }, []);
+
+    if (selected.length >= 4) return selected;
+
+    const fallback = projects.filter((project) => !selectedIds.has(project.id));
+    return [...selected, ...fallback].slice(0, 4);
   }, [projects]);
 
   const visibleProjects = useMemo(
