@@ -1,6 +1,6 @@
 create extension if not exists pgcrypto;
 
-create table if not exists public.projects (
+create table if not exists public.portfolio_projects (
   id uuid primary key default gen_random_uuid(),
   title text not null,
   description text not null default '',
@@ -20,9 +20,9 @@ create table if not exists public.projects (
   constraint projects_aspect_ratio_check check (aspect_ratio > 0)
 );
 
-create index if not exists projects_created_at_idx on public.projects (created_at desc);
-create index if not exists projects_category_idx on public.projects (category);
-create index if not exists projects_featured_idx on public.projects (featured) where featured = true;
+create index if not exists portfolio_projects_created_at_idx on public.portfolio_projects (created_at desc);
+create index if not exists portfolio_projects_category_idx on public.portfolio_projects (category);
+create index if not exists portfolio_projects_featured_idx on public.portfolio_projects (featured) where featured = true;
 
 create or replace function public.set_updated_at()
 returns trigger
@@ -34,38 +34,38 @@ begin
 end;
 $$;
 
-drop trigger if exists projects_set_updated_at on public.projects;
-create trigger projects_set_updated_at
-before update on public.projects
+drop trigger if exists portfolio_projects_set_updated_at on public.portfolio_projects;
+create trigger portfolio_projects_set_updated_at
+before update on public.portfolio_projects
 for each row execute function public.set_updated_at();
 
-alter table public.projects enable row level security;
+alter table public.portfolio_projects enable row level security;
 
-drop policy if exists "Public can read projects" on public.projects;
+drop policy if exists "Public can read projects" on public.portfolio_projects;
 create policy "Public can read projects"
-on public.projects
+on public.portfolio_projects
 for select
 to anon, authenticated
 using (true);
 
-drop policy if exists "Authenticated admins can insert projects" on public.projects;
+drop policy if exists "Authenticated admins can insert projects" on public.portfolio_projects;
 create policy "Authenticated admins can insert projects"
-on public.projects
+on public.portfolio_projects
 for insert
 to authenticated
 with check (true);
 
-drop policy if exists "Authenticated admins can update projects" on public.projects;
+drop policy if exists "Authenticated admins can update projects" on public.portfolio_projects;
 create policy "Authenticated admins can update projects"
-on public.projects
+on public.portfolio_projects
 for update
 to authenticated
 using (true)
 with check (true);
 
-drop policy if exists "Authenticated admins can delete projects" on public.projects;
+drop policy if exists "Authenticated admins can delete projects" on public.portfolio_projects;
 create policy "Authenticated admins can delete projects"
-on public.projects
+on public.portfolio_projects
 for delete
 to authenticated
 using (true);
