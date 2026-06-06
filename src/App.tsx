@@ -59,6 +59,12 @@ function normalizeProject(row: Project): Project {
   };
 }
 
+function resolveAssetUrl(url: string) {
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+  if (!basePath || !url.startsWith("/assets/")) return url;
+  return `${basePath}${url}`;
+}
+
 export default function App() {
   const [lang, setLang] = useState<Language>(() => (localStorage.getItem(STORAGE_KEYS.lang) as Language) || "es");
   const [theme, setTheme] = useState<Theme>(() => (localStorage.getItem(STORAGE_KEYS.theme) as Theme) || "light");
@@ -274,7 +280,7 @@ export default function App() {
                 className={`hero-piece ${index === 0 ? "hero-piece-large" : ""} ${index === 3 ? "hero-piece-wide" : ""}`}
                 key={project.id}
               >
-                <img src={project.image_url} alt={project.title} />
+                <img src={resolveAssetUrl(project.image_url)} alt={project.title} />
                 {project.palette.length > 0 ? (
                   <button className="hero-palette palette-trigger" type="button" onClick={() => setPaletteProject(project)} aria-label={`${project.title} color palette and technique`}>
                     {project.palette.slice(0, 4).map((color) => <span key={color} style={{ "--swatch": color } as CSSProperties} />)}
@@ -332,7 +338,7 @@ export default function App() {
                     }
                   }}
                 >
-                  <img src={project.image_url} alt={project.title} loading={index < 4 ? "eager" : "lazy"} />
+                  <img src={resolveAssetUrl(project.image_url)} alt={project.title} loading={index < 4 ? "eager" : "lazy"} />
                   <figcaption>
                     <div className="art-meta">
                       <strong>{project.title}</strong>
@@ -508,7 +514,7 @@ function ProjectLightbox({ project, copy, onClose }: { project: Project; copy: R
       if (event.target === event.currentTarget) onClose();
     }}>
       <button className="lightbox-close" type="button" aria-label="Close preview" onClick={onClose}>×</button>
-      <img src={project.image_url} alt={project.title} />
+      <img src={resolveAssetUrl(project.image_url)} alt={project.title} />
       <div className="lightbox-caption">
         <span>{project.title}</span>
         <p>{project.description}</p>

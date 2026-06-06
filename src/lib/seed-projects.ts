@@ -1,6 +1,7 @@
 import type { Project } from "./types";
 
 const now = new Date().toISOString();
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 function project(
   index: number,
@@ -17,7 +18,7 @@ function project(
     title,
     description,
     category,
-    image_url: `/assets/portfolio/${image}`,
+    image_url: `${basePath}/assets/portfolio/${image}`,
     project_url: null,
     github_url: null,
     technologies: [category],
