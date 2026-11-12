@@ -9,6 +9,7 @@ export const translations = {
   es: {
     navAbout: "Sobre mí",
     navWork: "Obra",
+    navThesis: "Tesis",
     navContact: "Contacto",
     theme: "Dark",
     adminMode: "Modo Administrador",
@@ -22,6 +23,10 @@ export const translations = {
     workTitle: "Obra",
     workSubtitle:
       "Una selección curada de ilustración, personajes, branding y exploracion visual.",
+    thesisTitle: "Tesis",
+    thesisKicker: "UMA — Metamorfosis",
+    thesisBody:
+      "UMA — Metamorfosis es el proyecto de tesis de Xiomara: cinco personajes que recorren el nacimiento, el autoconocimiento, la autodestrucción, la sanación y la reinvención. Cada uno nace en el boceto, se define en estudios de color y técnica — puntillismo, chaquira, neón y geometría — y se materializa en esculturas talladas y pintadas a mano en Oaxaca, en colaboración con el artesano Orlando Mandarín.",
     collabTitle: "Colaboración",
     collabLabel: "Colaboradora creativa - Bastida Systems",
     collabBody:
@@ -57,6 +62,7 @@ export const translations = {
   en: {
     navAbout: "About",
     navWork: "Work",
+    navThesis: "Thesis",
     navContact: "Contact",
     theme: "Dark",
     adminMode: "Admin Mode",
@@ -70,6 +76,10 @@ export const translations = {
     workTitle: "Work",
     workSubtitle:
       "A curated selection of illustration, characters, branding, and visual exploration.",
+    thesisTitle: "Thesis",
+    thesisKicker: "UMA — Metamorphosis",
+    thesisBody:
+      "UMA — Metamorphosis is Xiomara's thesis project: five characters journeying through birth, self-knowledge, self-destruction, healing, and reinvention. Each one begins as a sketch, takes shape through color and technique studies — pointillism, beadwork, neon, and geometry — and materializes as hand-carved, hand-painted sculptures in Oaxaca, in collaboration with artisan Orlando Mandarín.",
     collabTitle: "Collaboration",
     collabLabel: "Creative Collaborator - Bastida Systems",
     collabBody:
@@ -129,3 +139,35 @@ export const skills = {
   es: ["Ilustración", "Color", "Diseño de personajes", "Arte digital", "Bocetaje", "Branding", "Concept art"],
   en: ["Illustration", "Color", "Character Design", "Digital Art", "Sketching", "Branding", "Concept Art"],
 } satisfies Record<Language, string[]>;
+
+export const thesisStages = {
+  es: [
+    { name: "Orive", stage: "Nacimiento" },
+    { name: "Roser", stage: "Autoconocimiento" },
+    { name: "Ragui", stage: "Autodestrucción" },
+    { name: "Buma", stage: "Sanación" },
+    { name: "Pille", stage: "Reinvención" },
+  ],
+  en: [
+    { name: "Orive", stage: "Birth" },
+    { name: "Roser", stage: "Self-knowledge" },
+    { name: "Ragui", stage: "Self-destruction" },
+    { name: "Buma", stage: "Healing" },
+    { name: "Pille", stage: "Reinvention" },
+  ],
+} satisfies Record<Language, Array<{ name: string; stage: string }>>;
+
+export const thesisImages: Array<{ src: string; es: string; en: string }> = [
+  { src: "/assets/tesis/tesis-metamorfosis-boceto.jpg", es: "Metamorfosis — bocetos y etapas", en: "Metamorphosis — sketches and stages" },
+  { src: "/assets/tesis/tesis-estudio-color.jpg", es: "Estudio de color y técnicas", en: "Color and technique study" },
+  { src: "/assets/tesis/tesis-ilustracion.jpg", es: "Los cinco personajes — ilustración", en: "The five characters — illustration" },
+  { src: "/assets/tesis/tesis-artesano-orlando.jpg", es: "Piezas en blanco con el artesano Orlando Mandarín", en: "Blank pieces with artisan Orlando Mandarín" },
+  { src: "/assets/tesis/tesis-orive.jpg", es: "Orive — Nacimiento", en: "Orive — Birth" },
+  { src: "/assets/tesis/tesis-ragui-chaquira.jpg", es: "Ragui — Autodestrucción, en chaquira", en: "Ragui — Self-destruction, in beadwork" },
+  { src: "/assets/tesis/tesis-buma.jpg", es: "Buma — Sanación", en: "Buma — Healing" },
+  { src: "/assets/tesis/tesis-pille.jpg", es: "Pille — Reinvención", en: "Pille — Reinvention" },
+  { src: "/assets/tesis/tesis-grupo-tienda.jpg", es: "La colección completa", en: "The complete collection" },
+  { src: "/assets/tesis/tesis-grupo-santo-domingo.jpg", es: "Frente a Santo Domingo, Oaxaca", en: "In front of Santo Domingo, Oaxaca" },
+  { src: "/assets/tesis/tesis-papel-picado.jpg", es: "Inspiración — Día de Muertos", en: "Inspiration — Day of the Dead" },
+  { src: "/assets/tesis/tesis-calavera.jpg", es: "Inspiración — Día de Muertos", en: "Inspiration — Day of the Dead" },
+];

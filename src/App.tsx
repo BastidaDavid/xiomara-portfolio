@@ -1,6 +1,6 @@
 import { type CSSProperties, type FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { categoryLabels, skills, STORAGE_KEYS, translations } from "./lib/content";
+import { categoryLabels, skills, STORAGE_KEYS, thesisImages, thesisStages, translations } from "./lib/content";
 import { seedProjects } from "./lib/seed-projects";
 import { isSupabaseConfigured, supabase } from "./lib/supabase";
 import type { Language, Project, ProjectCategory, ProjectFormValues, Theme } from "./lib/types";
@@ -260,6 +260,7 @@ export default function App() {
         <nav className="nav-links" aria-label="Sections">
           <a href="#about">{copy.navAbout}</a>
           <a href="#work">{copy.navWork}</a>
+          <a href="#thesis">{copy.navThesis}</a>
           <a href="#contact">{copy.navContact}</a>
         </nav>
         <div className="controls" aria-label="Display controls">
@@ -379,9 +380,38 @@ export default function App() {
           </div>
         </section>
 
+        <section className="section thesis-section" id="thesis">
+          <div className="section-heading centered reveal visible">
+            <span className="section-index">03</span>
+            <h2>{copy.thesisTitle}</h2>
+            <p>{copy.thesisKicker}</p>
+          </div>
+
+          <figure className="thesis-cover reveal visible">
+            <img src={resolveAssetUrl("/assets/tesis/uma-portada.jpg")} alt="UMA — Metamorfosis" />
+          </figure>
+
+          <p className="lead thesis-lead reveal visible">{copy.thesisBody}</p>
+
+          <ul className="thesis-stages reveal visible" aria-label="UMA characters">
+            {thesisStages[lang].map((item) => (
+              <li key={item.name}><strong>{item.name}</strong><span>{item.stage}</span></li>
+            ))}
+          </ul>
+
+          <div className="thesis-gallery reveal visible">
+            {thesisImages.map((image, index) => (
+              <figure key={image.src}>
+                <img src={resolveAssetUrl(image.src)} alt={image[lang]} loading={index < 2 ? "eager" : "lazy"} />
+                <figcaption>{image[lang]}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
         <section className="section collaboration">
           <div className="section-heading reveal visible">
-            <span className="section-index">03</span>
+            <span className="section-index">04</span>
             <h2>{copy.collabTitle}</h2>
           </div>
           <div className="collab-panel reveal visible">
@@ -392,7 +422,7 @@ export default function App() {
 
         <section className="section skills-section">
           <div className="section-heading reveal visible">
-            <span className="section-index">04</span>
+            <span className="section-index">05</span>
             <h2>{copy.skillsTitle}</h2>
           </div>
           <ul className="skills-list reveal visible" aria-label="Skills">
@@ -402,7 +432,7 @@ export default function App() {
 
         <section className="section contact-section" id="contact">
           <div className="contact-copy reveal visible">
-            <span className="section-index">05</span>
+            <span className="section-index">06</span>
             <h2>{copy.contactTitle}</h2>
             <p>{copy.contactSubtitle}</p>
           </div>
