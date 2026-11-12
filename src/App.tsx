@@ -442,7 +442,7 @@ export default function App() {
           </div>
           <div className="contact-grid reveal visible">
             <a href="mailto:xiomaravazquezr@hotmail.com"><span>Email</span><strong>xiomaravazquezr@hotmail.com</strong></a>
-            <a href="https://instagram.com/" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@xiomara.art</strong></a>
+            <a href="https://instagram.com/uma._vr" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@uma._vr</strong></a>
             <a href="https://behance.net/" target="_blank" rel="noreferrer"><span>Behance</span><strong>Xiomara Vázquez</strong></a>
             <div><span>{copy.locationLabel}</span><strong>{copy.location}</strong></div>
             <div><span>{copy.collabsLabel}</span><strong>{copy.collabs}</strong></div>
