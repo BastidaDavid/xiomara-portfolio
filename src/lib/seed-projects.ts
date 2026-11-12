@@ -60,4 +60,10 @@ export const seedProjects: Project[] = [
   project(27, "Kiska Campaign", "kiska-campaign.jpg", "branding", "Composicion publicitaria digital con producto, fuego, tipografia y atmosfera intensa.", ["#e15622", "#8a1018", "#f4a431", "#211317"], 0.56),
   project(28, "Traditional Sketch", "octopus-sketch.jpg", "sketches", "Boceto tradicional en tinta con tramado, linea expresiva y detalle ornamental.", ["#f2f0ea", "#1a1a1a", "#89847e", "#c9c5bd"], 0.78),
   project(29, "Bad Bunny Character", "digital-portrait.jpg", "characters", "Ilustración digital de personaje con estilo cartoon, contraste y grafica musical.", ["#1b1b1d", "#e84f8e", "#69c5c7", "#f4ede6"], 1),
+  project(30, "Kaxi Ita — Buffet", "kaxi-ita-buffet.jpg", "branding", "Diseño publicitario para restaurante: flyer promocional de buffet con fotomontaje, tipografía y jerarquía de precios.", ["#1d3a5f", "#d9a441", "#e07b39", "#f2ead8"], 0.52),
+  project(31, "Cuadra Gallos — Logo", "cuadra-gallos-logo.jpg", "branding", "Ilustración de mascota e identidad para Cuadra Gallos: personaje con lettering y acabado tipo sticker.", ["#d42a1e", "#141414", "#d9a441", "#3f7a3a"], 1.03),
+  project(32, "Cuadra Gallos — Merch", "cuadra-gallos-merch.jpg", "branding", "Aplicación de la identidad en merch: parche bordado en chamarra y pin en gorra.", ["#c22418", "#191919", "#caa25a", "#2e4a2e"], 0.56),
+  project(33, "La Diabla — Hoodie", "la-diabla-hoodie.jpg", "branding", "Diseño de merch para hoodie: gráfico en pecho, manga y espalda con ilustración y lettering.", ["#111111", "#d42a1e", "#f2a03d", "#f4f1eb"], 1.9),
+  project(34, "MXI Brand — Pines", "mxi-brand-pines.jpg", "branding", "Diseño de pines esmaltados y tarjetas de empaque para MXI Brand.", ["#1c4f9c", "#d9a441", "#141414", "#f4f1eb"], 0.56),
+  project(35, "Corridos Tumbados — Gorra", "corridos-tumbados-gorra.jpg", "branding", "Diseño integral de gorra NT — Corridos Tumbados (Warrior Rabbit): bordados, interiores y ficha técnica.", ["#efe7da", "#c22418", "#141414", "#3f7a3a"], 0.99),
 ];
