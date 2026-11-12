@@ -210,6 +210,32 @@ h2 {
   line-height: 1.7;
 }
 
+.hero-quote {
+  max-width: 32rem;
+  margin: 2rem 0 0;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--accent);
+}
+
+.hero-quote p {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.hero-quote cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
 .hero-gallery {
   display: grid;
   grid-template-columns: 1.1fr 0.85fr;

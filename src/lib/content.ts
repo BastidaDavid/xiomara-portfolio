@@ -15,8 +15,11 @@ export const translations = {
     adminMode: "Modo Administrador",
     logout: "Logout",
     login: "Login",
-    heroRole: "Artísta visual e ilustradora",
+    heroRole: "Diseñadora Multimedia e Ilustradora Digital",
     heroSubtitle: "Color, ilustración, personajes y conceptos visuales.",
+    heroQuote:
+      "“La magia de la creatividad está en cómo cuentas tu propia historia y haces que los demás no solo la escuchen, sino que la vivan y la sientan como suya”",
+    heroQuoteCite: "(Reyes, 2025)",
     aboutTitle: "Sobre mí",
     aboutBody:
       "Xiomara Vázquez es una artista visual e ilustradora enfocada en color, diseño de personajes y desarrollo de conceptos visuales. Su trabajo combina imaginación, sensibilidad artística y versatilidad, creando piezas para proyectos narrativos, branding, mercancia y experiencias digitales.",
@@ -68,8 +71,11 @@ export const translations = {
     adminMode: "Admin Mode",
     logout: "Logout",
     login: "Login",
-    heroRole: "Visual Artist & Illustrator",
+    heroRole: "Multimedia Designer & Digital Illustrator",
     heroSubtitle: "Color, illustration, characters, and visual concepts.",
+    heroQuote:
+      "“The magic of creativity lies in how you tell your own story and make others not only hear it, but live it and feel it as their own”",
+    heroQuoteCite: "(Reyes, 2025)",
     aboutTitle: "About",
     aboutBody:
       "Xiomara Vázquez is a visual artist and illustrator focused on color, character design, and visual concept development. Her work combines imagination, artistic sensitivity, and versatility, creating pieces for narrative projects, branding, merchandise, and digital experiences.",

@@ -287,6 +287,10 @@ export default function App() {
             <p className="role">{copy.heroRole}</p>
             <h1>Xiomara Vázquez</h1>
             <p className="hero-subtitle">{copy.heroSubtitle}</p>
+            <blockquote className="hero-quote">
+              <p>{copy.heroQuote}</p>
+              <cite>{copy.heroQuoteCite}</cite>
+            </blockquote>
           </div>
 
           <div className="hero-gallery reveal visible" aria-label="Featured artworks">
