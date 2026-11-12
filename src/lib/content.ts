@@ -152,14 +152,14 @@ export const thesisStages = {
     { name: "Roser", stage: "Autoconocimiento" },
     { name: "Ragui", stage: "Autodestrucción" },
     { name: "Buma", stage: "Sanación" },
-    { name: "Pille", stage: "Reinvención" },
+    { name: "Rille", stage: "Reinvención" },
   ],
   en: [
     { name: "Orive", stage: "Birth" },
     { name: "Roser", stage: "Self-knowledge" },
     { name: "Ragui", stage: "Self-destruction" },
     { name: "Buma", stage: "Healing" },
-    { name: "Pille", stage: "Reinvention" },
+    { name: "Rille", stage: "Reinvention" },
   ],
 } satisfies Record<Language, Array<{ name: string; stage: string }>>;
 
@@ -171,7 +171,7 @@ export const thesisImages: Array<{ src: string; es: string; en: string }> = [
   { src: "/assets/tesis/tesis-orive.jpg", es: "Orive — Nacimiento", en: "Orive — Birth" },
   { src: "/assets/tesis/tesis-ragui-chaquira.jpg", es: "Ragui — Autodestrucción, en chaquira", en: "Ragui — Self-destruction, in beadwork" },
   { src: "/assets/tesis/tesis-buma.jpg", es: "Buma — Sanación", en: "Buma — Healing" },
-  { src: "/assets/tesis/tesis-pille.jpg", es: "Pille — Reinvención", en: "Pille — Reinvention" },
+  { src: "/assets/tesis/tesis-rille.jpg", es: "Rille — Reinvención", en: "Rille — Reinvention" },
   { src: "/assets/tesis/tesis-grupo-tienda.jpg", es: "La colección completa", en: "The complete collection" },
   { src: "/assets/tesis/tesis-grupo-santo-domingo.jpg", es: "Frente a Santo Domingo, Oaxaca", en: "In front of Santo Domingo, Oaxaca" },
   { src: "/assets/tesis/tesis-papel-picado.jpg", es: "Inspiración — Día de Muertos", en: "Inspiration — Day of the Dead" },
